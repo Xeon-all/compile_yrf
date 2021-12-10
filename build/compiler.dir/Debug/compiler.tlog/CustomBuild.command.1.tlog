@@ -1,0 +1,38 @@
+^D:\COURSES\21-F\COMPILE\LAB\COMPILER_YRF\COMPILE_YRF\BUILD\CMAKEFILES\839E6F01E087D4EED1EE6BBE7FD14B45\SYSY.TAB.CPP.RULE
+setlocal
+cd D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\GnuWin32\bin\bison.exe" -d -o D:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build/sysY.tab.cpp D:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/src/sysY.y
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COURSES\21-F\COMPILE\LAB\COMPILER_YRF\COMPILE_YRF\BUILD\CMAKEFILES\839E6F01E087D4EED1EE6BBE7FD14B45\SYSY.LEX.CPP.RULE
+setlocal
+cd D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\GnuWin32\bin\flex.exe" -oD:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build/sysY.lex.cpp D:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/src/sysY.l
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\COURSES\21-F\COMPILE\LAB\COMPILER_YRF\COMPILE_YRF\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf -BD:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build --check-stamp-file D:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

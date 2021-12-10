@@ -1,0 +1,55 @@
+ENV P (N) idx(0) n_t:0
+-symbol name:n Ename:T0
+    ENV P (0) idx(7) n_t:21
+    -symbol name:temp Ename:T1
+
+    -symbol name:array Ename:p0
+    -symbol name:i Ename:p1
+    -symbol name:j Ename:p2
+    ENV P (0) idx(8) n_t:25
+    -symbol name:dad Ename:T2
+    -symbol name:son Ename:T3
+
+    -symbol name:arr Ename:p0
+    -symbol name:start Ename:p1
+    -symbol name:end Ename:p2
+ENV P (8) idx(9) n_t:21, NO SYMBOL 
+    ENV P (9) idx(10) n_t:3, NO SYMBOL 
+    ENV P (0) idx(11) n_t:12
+    -symbol name:i Ename:T4
+    -symbol name:tmp Ename:T5
+
+    -symbol name:arr Ename:p0
+    -symbol name:len Ename:p1
+ENV P (11) idx(12) n_t:3, NO SYMBOL 
+ENV P (11) idx(13) n_t:4
+-symbol name:tmp0 Ename:T6
+    ENV P (0) idx(14) n_t:26
+    -symbol name:a Ename:T7 arrsize:40
+    -symbol name:i Ename:T8
+ENV P (14) idx(15) n_t:4
+-symbol name:tmp Ename:T9
+    ENV P (0) idx(14) n_t:26
+    -symbol name:a Ename:T7 arrsize:40
+    -symbol name:i Ename:T8
+ENV P (14) idx(15) n_t:4
+-symbol name:tmp Ename:T9
+    ENV P (0) idx(11) n_t:12
+    -symbol name:i Ename:T4
+    -symbol name:tmp Ename:T5
+
+    -symbol name:arr Ename:p0
+    -symbol name:len Ename:p1
+ENV P (11) idx(12) n_t:3, NO SYMBOL 
+ENV P (11) idx(13) n_t:4
+-symbol name:tmp0 Ename:T6
+    ENV P (0) idx(14) n_t:26
+    -symbol name:a Ename:T7 arrsize:40
+    -symbol name:i Ename:T8
+ENV P (14) idx(15) n_t:4
+-symbol name:tmp Ename:T9
+    ENV P (0) idx(14) n_t:26
+    -symbol name:a Ename:T7 arrsize:40
+    -symbol name:i Ename:T8
+ENV P (14) idx(15) n_t:4
+-symbol name:tmp Ename:T9

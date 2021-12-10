@@ -1,0 +1,394 @@
+[*]ROOT(3) at L0, P (N) L (N) R (N)
+    [*]VarDecl(2) at L0, P (3) L (N) R (43)
+        [*]VarDef(1) at L0, P (2) L (N) R (N)name = n
+            [*]ConstLVal(0) at L0, P (1) L (N) R (N)name = n
+                NONE
+            NONE
+    [*]FuncDefInt(43) at L9, P (N) L (2) R (115)name = swap
+        [*]Block(42) at L9, P (43) L (N) R (N)
+            [*]VarDecl(9) at L2, P (42) L (N) R (13)
+                [*]VarDef(8) at L2, P (9) L (N) R (N)name = temp
+                    [*]ConstLVal(7) at L2, P (8) L (N) R (N)name = temp
+                        NONE
+                    NONE
+            [*]Assign(13) at L3, P (42) L (9) R (18)
+                [*]LVal(10) at L3, P (13) L (N) R (N)name = temp
+                    NONE
+                [*]LVal(11) at L3, P (13) L (N) R (N)name = array
+                    [*]LVal(12) at L3, P (11) L (N) R (N)name = i
+                        NONE
+            [*]Assign(18) at L4, P (42) L (13) R (22)
+                [*]LVal(14) at L4, P (18) L (N) R (N)name = array
+                    [*]LVal(15) at L4, P (14) L (N) R (N)name = i
+                        NONE
+                [*]LVal(16) at L4, P (18) L (N) R (N)name = array
+                    [*]LVal(17) at L4, P (16) L (N) R (N)name = j
+                        NONE
+            [*]Assign(22) at L5, P (42) L (18) R (39)
+                [*]LVal(19) at L5, P (22) L (N) R (N)name = array
+                    [*]LVal(20) at L5, P (19) L (N) R (N)name = j
+                        NONE
+                [*]LVal(21) at L5, P (22) L (N) R (N)name = temp
+                    NONE
+            [*]IF(39) at L8, P (42) L (22) R (41)
+                [*]LAndExp(33) at L6, P (39) L (N) R (N)
+                    [*]RelExp(25) at L6, P (33) L (N) R (N)name = <
+                        [*]LVal(23) at L6, P (25) L (N) R (N)name = i
+                            NONE
+                        [*]LVal(24) at L6, P (25) L (N) R (N)name = j
+                            NONE
+                    [*]RelExp(32) at L6, P (33) L (N) R (N)name = <
+                        [*]LVal(26) at L6, P (32) L (N) R (N)name = array
+                            [*]LVal(27) at L6, P (26) L (N) R (N)name = i
+                                NONE
+                        [*]LVal(28) at L6, P (32) L (N) R (N)name = array
+                            [*]AddExp(31) at L6, P (28) L (N) R (N)name = +
+                                [*]LVal(29) at L6, P (31) L (N) R (N)name = i
+                                    NONE
+                                [*]Number(30) at L6, P (31) L (N) R (N)value = 1
+                [*]Assign(38) at L7, P (39) L (N) R (N)
+                    [*]LVal(34) at L7, P (38) L (N) R (N)name = i
+                        NONE
+                    [*]AddExp(37) at L7, P (38) L (N) R (N)name = +
+                        [*]LVal(35) at L7, P (37) L (N) R (N)name = i
+                            NONE
+                        [*]Number(36) at L7, P (37) L (N) R (N)value = 1
+                NONE
+            [*]Return(41) at L8, P (42) L (39) R (N)
+                [*]Number(40) at L8, P (41) L (N) R (N)value = 0
+        [*]FuncFP(4) at L1, P (43) L (N) R (5)name = array
+            NONE
+        [*]FuncFP(5) at L1, P (43) L (4) R (6)name = i
+            NONE
+        [*]FuncFP(6) at L1, P (43) L (5) R (N)name = j
+            NONE
+    [*]FuncDefInt(115) at L27, P (N) L (43) R (195)name = heap_ajust
+        [*]Block(114) at L27, P (115) L (N) R (N)
+            [*]VarDecl(49) at L11, P (114) L (N) R (52)
+                [*]VarDef(48) at L11, P (49) L (N) R (N)name = dad
+                    [*]ConstLVal(47) at L11, P (48) L (N) R (N)name = dad
+                        NONE
+                    NONE
+            [*]Assign(52) at L12, P (114) L (49) R (55)
+                [*]LVal(50) at L12, P (52) L (N) R (N)name = dad
+                    NONE
+                [*]LVal(51) at L12, P (52) L (N) R (N)name = start
+                    NONE
+            [*]VarDecl(55) at L13, P (114) L (52) R (62)
+                [*]VarDef(54) at L13, P (55) L (N) R (N)name = son
+                    [*]ConstLVal(53) at L13, P (54) L (N) R (N)name = son
+                        NONE
+                    NONE
+            [*]Assign(62) at L14, P (114) L (55) R (111)
+                [*]LVal(56) at L14, P (62) L (N) R (N)name = son
+                    NONE
+                [*]AddExp(61) at L14, P (62) L (N) R (N)name = +
+                    [*]MulExp(59) at L14, P (61) L (N) R (N)name = *
+                        [*]LVal(57) at L14, P (59) L (N) R (N)name = dad
+                            NONE
+                        [*]Number(58) at L14, P (59) L (N) R (N)value = 2
+                    [*]Number(60) at L14, P (61) L (N) R (N)value = 1
+            [*]While(111) at L25, P (114) L (62) R (113)
+                [*]RelExp(67) at L15, P (111) L (N) R (N)name = <
+                    [*]LVal(63) at L15, P (67) L (N) R (N)name = son
+                        NONE
+                    [*]AddExp(66) at L15, P (67) L (N) R (N)name = +
+                        [*]LVal(64) at L15, P (66) L (N) R (N)name = end
+                            NONE
+                        [*]Number(65) at L15, P (66) L (N) R (N)value = 1
+                [*]Block(110) at L25, P (111) L (N) R (N)
+                    [*]IF(84) at L18, P (110) L (N) R (109)
+                        [*]LAndExp(78) at L16, P (84) L (N) R (N)
+                            [*]RelExp(70) at L16, P (78) L (N) R (N)name = <
+                                [*]LVal(68) at L16, P (70) L (N) R (N)name = son
+                                    NONE
+                                [*]LVal(69) at L16, P (70) L (N) R (N)name = end
+                                    NONE
+                            [*]RelExp(77) at L16, P (78) L (N) R (N)name = <
+                                [*]LVal(71) at L16, P (77) L (N) R (N)name = arr
+                                    [*]LVal(72) at L16, P (71) L (N) R (N)name = son
+                                        NONE
+                                [*]LVal(73) at L16, P (77) L (N) R (N)name = arr
+                                    [*]AddExp(76) at L16, P (73) L (N) R (N)name = +
+                                        [*]LVal(74) at L16, P (76) L (N) R (N)name = son
+                                            NONE
+                                        [*]Number(75) at L16, P (76) L (N) R (N)value = 1
+                        [*]Assign(83) at L17, P (84) L (N) R (N)
+                            [*]LVal(79) at L17, P (83) L (N) R (N)name = son
+                                NONE
+                            [*]AddExp(82) at L17, P (83) L (N) R (N)name = +
+                                [*]LVal(80) at L17, P (82) L (N) R (N)name = son
+                                    NONE
+                                [*]Number(81) at L17, P (82) L (N) R (N)value = 1
+                        NONE
+                    [*]IF(109) at L24, P (110) L (84) R (N)
+                        [*]RelExp(89) at L18, P (109) L (N) R (N)name = >
+                            [*]LVal(85) at L18, P (89) L (N) R (N)name = arr
+                                [*]LVal(86) at L18, P (85) L (N) R (N)name = dad
+                                    NONE
+                            [*]LVal(87) at L18, P (89) L (N) R (N)name = arr
+                                [*]LVal(88) at L18, P (87) L (N) R (N)name = son
+                                    NONE
+                        [*]Return(91) at L19, P (109) L (N) R (N)
+                            [*]Number(90) at L19, P (91) L (N) R (N)value = 0
+                        [*]Block(108) at L24, P (109) L (N) R (N)
+                            [*]Assign(97) at L21, P (108) L (N) R (100)
+                                [*]LVal(92) at L21, P (97) L (N) R (N)name = dad
+                                    NONE
+                                [*]UnaryExp(96) at L21, P (97) L (N) R (N)name = swap
+                                    NONE
+                                    [*]LVal(93) at L21, P (96) L (N) R (94)name = arr
+                                        NONE
+                                    [*]LVal(94) at L21, P (N) L (93) R (95)name = dad
+                                        NONE
+                                    [*]LVal(95) at L21, P (N) L (94) R (N)name = son
+                                        NONE
+                            [*]Assign(100) at L22, P (108) L (97) R (107)
+                                [*]LVal(98) at L22, P (100) L (N) R (N)name = dad
+                                    NONE
+                                [*]LVal(99) at L22, P (100) L (N) R (N)name = son
+                                    NONE
+                            [*]Assign(107) at L23, P (108) L (100) R (N)
+                                [*]LVal(101) at L23, P (107) L (N) R (N)name = son
+                                    NONE
+                                [*]AddExp(106) at L23, P (107) L (N) R (N)name = +
+                                    [*]MulExp(104) at L23, P (106) L (N) R (N)name = *
+                                        [*]LVal(102) at L23, P (104) L (N) R (N)name = dad
+                                            NONE
+                                        [*]Number(103) at L23, P (104) L (N) R (N)value = 2
+                                    [*]Number(105) at L23, P (106) L (N) R (N)value = 1
+            [*]Return(113) at L26, P (114) L (111) R (N)
+                [*]Number(112) at L26, P (113) L (N) R (N)value = 0
+        [*]FuncFP(44) at L10, P (115) L (N) R (45)name = arr
+            NONE
+        [*]FuncFP(45) at L10, P (115) L (44) R (46)name = start
+            NONE
+        [*]FuncFP(46) at L10, P (115) L (45) R (N)name = end
+            NONE
+    [*]FuncDefInt(195) at L47, P (N) L (115) R (281)name = heap_sort
+        [*]Block(194) at L47, P (195) L (N) R (N)
+            [*]VarDecl(120) at L29, P (194) L (N) R (123)
+                [*]VarDef(119) at L29, P (120) L (N) R (N)name = i
+                    [*]ConstLVal(118) at L29, P (119) L (N) R (N)name = i
+                        NONE
+                    NONE
+            [*]VarDecl(123) at L30, P (194) L (120) R (130)
+                [*]VarDef(122) at L30, P (123) L (N) R (N)name = tmp
+                    [*]ConstLVal(121) at L30, P (122) L (N) R (N)name = tmp
+                        NONE
+                    NONE
+            [*]Assign(130) at L31, P (194) L (123) R (153)
+                [*]LVal(124) at L31, P (130) L (N) R (N)name = i
+                    NONE
+                [*]AddExp(129) at L31, P (130) L (N) R (N)name = -
+                    [*]MulExp(127) at L31, P (129) L (N) R (N)name = /
+                        [*]LVal(125) at L31, P (127) L (N) R (N)name = len
+                            NONE
+                        [*]Number(126) at L31, P (127) L (N) R (N)value = 2
+                    [*]Number(128) at L31, P (129) L (N) R (N)value = 1
+            [*]While(153) at L36, P (194) L (130) R (158)
+                [*]RelExp(135) at L32, P (153) L (N) R (N)name = >
+                    [*]LVal(131) at L32, P (135) L (N) R (N)name = i
+                        NONE
+                    [*]UnaryExp(134) at L32, P (135) L (N) R (N)
+                        [*]UnaryOP(132) at L32, P (134) L (N) R (N)name = -
+                        [*]Number(133) at L32, P (134) L (N) R (N)value = 1
+                [*]Block(152) at L36, P (153) L (N) R (N)
+                    [*]Assign(140) at L33, P (152) L (N) R (146)
+                        [*]LVal(136) at L33, P (140) L (N) R (N)name = tmp
+                            NONE
+                        [*]AddExp(139) at L33, P (140) L (N) R (N)name = -
+                            [*]LVal(137) at L33, P (139) L (N) R (N)name = len
+                                NONE
+                            [*]Number(138) at L33, P (139) L (N) R (N)value = 1
+                    [*]Assign(146) at L34, P (152) L (140) R (151)
+                        [*]LVal(141) at L34, P (146) L (N) R (N)name = tmp
+                            NONE
+                        [*]UnaryExp(145) at L34, P (146) L (N) R (N)name = heap_ajust
+                            NONE
+                            [*]LVal(142) at L34, P (145) L (N) R (143)name = arr
+                                NONE
+                            [*]LVal(143) at L34, P (N) L (142) R (144)name = i
+                                NONE
+                            [*]LVal(144) at L34, P (N) L (143) R (N)name = tmp
+                                NONE
+                    [*]Assign(151) at L35, P (152) L (146) R (N)
+                        [*]LVal(147) at L35, P (151) L (N) R (N)name = i
+                            NONE
+                        [*]AddExp(150) at L35, P (151) L (N) R (N)name = -
+                            [*]LVal(148) at L35, P (150) L (N) R (N)name = i
+                                NONE
+                            [*]Number(149) at L35, P (150) L (N) R (N)value = 1
+            [*]Assign(158) at L37, P (194) L (153) R (191)
+                [*]LVal(154) at L37, P (158) L (N) R (N)name = i
+                    NONE
+                [*]AddExp(157) at L37, P (158) L (N) R (N)name = -
+                    [*]LVal(155) at L37, P (157) L (N) R (N)name = len
+                        NONE
+                    [*]Number(156) at L37, P (157) L (N) R (N)value = 1
+            [*]While(191) at L45, P (194) L (158) R (193)
+                [*]RelExp(161) at L38, P (191) L (N) R (N)name = >
+                    [*]LVal(159) at L38, P (161) L (N) R (N)name = i
+                        NONE
+                    [*]Number(160) at L38, P (161) L (N) R (N)value = 0
+                [*]Block(190) at L45, P (191) L (N) R (N)
+                    [*]VarDecl(164) at L39, P (190) L (N) R (167)
+                        [*]VarDef(163) at L39, P (164) L (N) R (N)name = tmp0
+                            [*]ConstLVal(162) at L39, P (163) L (N) R (N)name = tmp0
+                                NONE
+                            NONE
+                    [*]Assign(167) at L40, P (190) L (164) R (173)
+                        [*]LVal(165) at L40, P (167) L (N) R (N)name = tmp0
+                            NONE
+                        [*]Number(166) at L40, P (167) L (N) R (N)value = 0
+                    [*]Assign(173) at L41, P (190) L (167) R (178)
+                        [*]LVal(168) at L41, P (173) L (N) R (N)name = tmp
+                            NONE
+                        [*]UnaryExp(172) at L41, P (173) L (N) R (N)name = swap
+                            NONE
+                            [*]LVal(169) at L41, P (172) L (N) R (170)name = arr
+                                NONE
+                            [*]LVal(170) at L41, P (N) L (169) R (171)name = tmp0
+                                NONE
+                            [*]LVal(171) at L41, P (N) L (170) R (N)name = i
+                                NONE
+                    [*]Assign(178) at L42, P (190) L (173) R (184)
+                        [*]LVal(174) at L42, P (178) L (N) R (N)name = tmp
+                            NONE
+                        [*]AddExp(177) at L42, P (178) L (N) R (N)name = -
+                            [*]LVal(175) at L42, P (177) L (N) R (N)name = i
+                                NONE
+                            [*]Number(176) at L42, P (177) L (N) R (N)value = 1
+                    [*]Assign(184) at L43, P (190) L (178) R (189)
+                        [*]LVal(179) at L43, P (184) L (N) R (N)name = tmp
+                            NONE
+                        [*]UnaryExp(183) at L43, P (184) L (N) R (N)name = heap_ajust
+                            NONE
+                            [*]LVal(180) at L43, P (183) L (N) R (181)name = arr
+                                NONE
+                            [*]LVal(181) at L43, P (N) L (180) R (182)name = tmp0
+                                NONE
+                            [*]LVal(182) at L43, P (N) L (181) R (N)name = tmp
+                                NONE
+                    [*]Assign(189) at L44, P (190) L (184) R (N)
+                        [*]LVal(185) at L44, P (189) L (N) R (N)name = i
+                            NONE
+                        [*]AddExp(188) at L44, P (189) L (N) R (N)name = -
+                            [*]LVal(186) at L44, P (188) L (N) R (N)name = i
+                                NONE
+                            [*]Number(187) at L44, P (188) L (N) R (N)value = 1
+            [*]Return(193) at L46, P (194) L (191) R (N)
+                [*]Number(192) at L46, P (193) L (N) R (N)value = 0
+        [*]FuncFP(116) at L28, P (195) L (N) R (117)name = arr
+            NONE
+        [*]FuncFP(117) at L28, P (195) L (116) R (N)name = len
+            NONE
+    [*]FuncDefInt(281) at L66, P (N) L (195) R (N)name = main
+        [*]Block(280) at L66, P (281) L (N) R (N)
+            [*]Assign(198) at L50, P (280) L (N) R (202)
+                [*]LVal(196) at L50, P (198) L (N) R (N)name = n
+                    NONE
+                [*]Number(197) at L50, P (198) L (N) R (N)value = 10
+            [*]VarDecl(202) at L51, P (280) L (198) R (206)
+                [*]VarDef(201) at L51, P (202) L (N) R (N)name = a
+                    [*]ConstLVal(200) at L51, P (201) L (N) R (N)name = a
+                        [*]Number(199) at L51, P (200) L (N) R (N)value = 10
+                    NONE
+            [*]Assign(206) at L52, P (280) L (202) R (210)
+                [*]LVal(203) at L52, P (206) L (N) R (N)name = a
+                    [*]Number(204) at L52, P (203) L (N) R (N)value = 0
+                [*]Number(205) at L52, P (206) L (N) R (N)value = 4
+            [*]Assign(210) at L52, P (280) L (206) R (214)
+                [*]LVal(207) at L52, P (210) L (N) R (N)name = a
+                    [*]Number(208) at L52, P (207) L (N) R (N)value = 1
+                [*]Number(209) at L52, P (210) L (N) R (N)value = 3
+            [*]Assign(214) at L52, P (280) L (210) R (218)
+                [*]LVal(211) at L52, P (214) L (N) R (N)name = a
+                    [*]Number(212) at L52, P (211) L (N) R (N)value = 2
+                [*]Number(213) at L52, P (214) L (N) R (N)value = 9
+            [*]Assign(218) at L52, P (280) L (214) R (222)
+                [*]LVal(215) at L52, P (218) L (N) R (N)name = a
+                    [*]Number(216) at L52, P (215) L (N) R (N)value = 3
+                [*]Number(217) at L52, P (218) L (N) R (N)value = 2
+            [*]Assign(222) at L52, P (280) L (218) R (226)
+                [*]LVal(219) at L52, P (222) L (N) R (N)name = a
+                    [*]Number(220) at L52, P (219) L (N) R (N)value = 4
+                [*]Number(221) at L52, P (222) L (N) R (N)value = 0
+            [*]Assign(226) at L53, P (280) L (222) R (230)
+                [*]LVal(223) at L53, P (226) L (N) R (N)name = a
+                    [*]Number(224) at L53, P (223) L (N) R (N)value = 5
+                [*]Number(225) at L53, P (226) L (N) R (N)value = 1
+            [*]Assign(230) at L53, P (280) L (226) R (234)
+                [*]LVal(227) at L53, P (230) L (N) R (N)name = a
+                    [*]Number(228) at L53, P (227) L (N) R (N)value = 6
+                [*]Number(229) at L53, P (230) L (N) R (N)value = 6
+            [*]Assign(234) at L53, P (280) L (230) R (238)
+                [*]LVal(231) at L53, P (234) L (N) R (N)name = a
+                    [*]Number(232) at L53, P (231) L (N) R (N)value = 7
+                [*]Number(233) at L53, P (234) L (N) R (N)value = 5
+            [*]Assign(238) at L53, P (280) L (234) R (242)
+                [*]LVal(235) at L53, P (238) L (N) R (N)name = a
+                    [*]Number(236) at L53, P (235) L (N) R (N)value = 8
+                [*]Number(237) at L53, P (238) L (N) R (N)value = 7
+            [*]Assign(242) at L53, P (280) L (238) R (245)
+                [*]LVal(239) at L53, P (242) L (N) R (N)name = a
+                    [*]Number(240) at L53, P (239) L (N) R (N)value = 9
+                [*]Number(241) at L53, P (242) L (N) R (N)value = 8
+            [*]VarDecl(245) at L54, P (280) L (242) R (248)
+                [*]VarDef(244) at L54, P (245) L (N) R (N)name = i
+                    [*]ConstLVal(243) at L54, P (244) L (N) R (N)name = i
+                        NONE
+                    NONE
+            [*]Assign(248) at L55, P (280) L (245) R (253)
+                [*]LVal(246) at L55, P (248) L (N) R (N)name = i
+                    NONE
+                [*]Number(247) at L55, P (248) L (N) R (N)value = 0
+            [*]Assign(253) at L56, P (280) L (248) R (277)
+                [*]LVal(249) at L56, P (253) L (N) R (N)name = i
+                    NONE
+                [*]UnaryExp(252) at L56, P (253) L (N) R (N)name = heap_sort
+                    NONE
+                    [*]LVal(250) at L56, P (252) L (N) R (251)name = a
+                        NONE
+                    [*]LVal(251) at L56, P (N) L (250) R (N)name = n
+                        NONE
+            [*]While(277) at L64, P (280) L (253) R (279)
+                [*]RelExp(256) at L57, P (277) L (N) R (N)name = <
+                    [*]LVal(254) at L57, P (256) L (N) R (N)name = i
+                        NONE
+                    [*]LVal(255) at L57, P (256) L (N) R (N)name = n
+                        NONE
+                [*]Block(276) at L64, P (277) L (N) R (N)
+                    [*]VarDecl(259) at L58, P (276) L (N) R (263)
+                        [*]VarDef(258) at L58, P (259) L (N) R (N)name = tmp
+                            [*]ConstLVal(257) at L58, P (258) L (N) R (N)name = tmp
+                                NONE
+                            NONE
+                    [*]Assign(263) at L59, P (276) L (259) R (265)
+                        [*]LVal(260) at L59, P (263) L (N) R (N)name = tmp
+                            NONE
+                        [*]LVal(261) at L59, P (263) L (N) R (N)name = a
+                            [*]LVal(262) at L59, P (261) L (N) R (N)name = i
+                                NONE
+                    [*]UnaryExp(265) at L60, P (276) L (263) R (268)name = putint
+                        NONE
+                        [*]LVal(264) at L60, P (265) L (N) R (N)name = tmp
+                            NONE
+                    [*]Assign(268) at L61, P (276) L (265) R (270)
+                        [*]LVal(266) at L61, P (268) L (N) R (N)name = tmp
+                            NONE
+                        [*]Number(267) at L61, P (268) L (N) R (N)value = 10
+                    [*]UnaryExp(270) at L62, P (276) L (268) R (275)name = putch
+                        NONE
+                        [*]LVal(269) at L62, P (270) L (N) R (N)name = tmp
+                            NONE
+                    [*]Assign(275) at L63, P (276) L (270) R (N)
+                        [*]LVal(271) at L63, P (275) L (N) R (N)name = i
+                            NONE
+                        [*]AddExp(274) at L63, P (275) L (N) R (N)name = +
+                            [*]LVal(272) at L63, P (274) L (N) R (N)name = i
+                                NONE
+                            [*]Number(273) at L63, P (274) L (N) R (N)value = 1
+            [*]Return(279) at L65, P (280) L (277) R (N)
+                [*]Number(278) at L65, P (279) L (N) R (N)value = 0
+        NONE

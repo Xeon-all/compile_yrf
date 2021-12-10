@@ -1,0 +1,10 @@
+^D:\COURSES\21-F\COMPILE\LAB\COMPILER_YRF\COMPILE_YRF\BUILD\CMAKEFILES\778D6A3E5DA5A18F64867B228B7A88E2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf -BD:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Courses/21-f/compile/lab/compiler_yrf/compile_yrf/build/compiler.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

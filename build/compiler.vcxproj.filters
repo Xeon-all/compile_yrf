@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\src\lex.yy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\src\symtab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\src\sysY.tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\src\translate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\src\tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\build\sysY.lex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\build\sysY.tab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\build\CMakeFiles\839e6f01e087d4eed1ee6bbe7fd14b45\sysY.tab.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\build\CMakeFiles\839e6f01e087d4eed1ee6bbe7fd14b45\sysY.lex.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Courses\21-f\compile\lab\compiler_yrf\compile_yrf\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{465F4C1F-4FDA-37D5-9AEF-875DFE6DB454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7DFDC156-E469-3573-8D69-53D1E1C3949B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

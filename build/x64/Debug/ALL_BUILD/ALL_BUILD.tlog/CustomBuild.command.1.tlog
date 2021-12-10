@@ -1,0 +1,10 @@
+^D:\学习\大三上\编译\LAB\COMPILER_YRF\COMPILE_YRF\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/学习/大三上/编译/lab/compiler_yrf/compile_yrf -BD:/学习/大三上/编译/lab/compiler_yrf/compile_yrf/build --check-stamp-file D:/学习/大三上/编译/lab/compiler_yrf/compile_yrf/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
